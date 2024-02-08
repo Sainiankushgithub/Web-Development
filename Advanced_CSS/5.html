@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    body
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: url(https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg?size=626&ext=jpg) no-repeat center center/cover;
+    }
+    main{
+        border: 2px solid rgb(86, 194, 215);
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        position: relative;
+    }
+    main header{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 20px;
+        background-color: white;
+        border-radius: 0 0 10px 10px;
+    }
+    form
+    {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    input[type="text"],
+    input[type="password"]
+    {
+        padding: 15px;
+        width: 100%;
+        border-radius: 25px;
+        outline: none;
+        background-color: transparent;
+        border: 2px solid rgb(147, 199, 206);
+    }
+    .form_wrapper
+    {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    label
+    {
+        position: absolute;
+        left: 10px;
+        font-size: 12px;
+    }
+    i{
+        position: absolute;
+        right: 10px;
+        /* color: rgb(0, 208, 255); */
+    }
+    .remember_box
+    {
+        display: flex;
+        gap: 10px;
+    }
+    button
+    {
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    input:valid+label,
+    input:focus+label{
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
+        transform: translate(15px,-25px);
+    }
+</style>
+<body>
+    <main>
+        <header>
+            <h4>Login</h4>
+        </header>
+        <form action="">
+           <div class="form_wrapper">
+            <input id="input" type="text" required>
+            <label  for="input">username</label>
+            <i class="material-icons">person</i>
+           </div>
+           <div class="form_wrapper">
+            <input id="password" type="password" required>
+            <label  for="password">password</label>
+            <i class="material-icons">lock</i>
+           </div>
+           <div class="remember_box">
+            <div class="remember">
+                <input type="checkbox">Remember me
+            </div>
+            <a href="#">forgot password ?</a>
+           </div>
+           <button>Login</button>
+           <div class="new_account">
+            Don't have account ? <a href="#">sign up</a>
+           </div>
+        </form>
+    </main>
+</body>
+</html>
