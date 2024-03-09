@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bat ball stumps</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+  
+</style>
+<body>
+  <h1>BAT BALL STUMPS </h1>
+  <button class="Symbol" onclick="playGames('Bat')" >Bat</button>
+  <button class="Symbol" onclick="playGames('Ball')" >Ball</button>
+  <button class="Symbol" onclick="playGames('Stumps')" >Stumps</button>
+  <h1 id="winner"></h1>
+  <script>
+    function playGames(userChoice)
+    {
+      let computerChoice='';
+      let choice=Math.floor(Math.random()*3);
+      if(choice>0 && choice<=1)
+      {
+        computerChoice='Ball';
+      }
+      else if(choice>1 && choice<=2)
+      {
+        computerChoice='Bat';
+      }
+      else 
+      {
+        computerChoice='Stumps'
+      }
+
+      if(userChoice=='Bat')
+      {
+        if(computerChoice=='Ball')
+        {
+          document.querySelector('#winner').innerText=`You won !!!
+          Bat hits the ball :: computer choice ${(computerChoice)} `;
+        }
+        else if(computerChoice=='Stumps')
+        {
+          document.querySelector('#winner').innerText=`You Lost !!!
+          Bat hits the Stumps :: computer choice ${(computerChoice)} `;
+        }
+        else{
+          document.querySelector('#winner').innerText=`Match Tie :: computer choice ${(computerChoice)} `;
+        }
+      }
+
+      else if(userChoice=='Ball')
+      {
+        if(computerChoice=='Bat')
+        {
+          document.querySelector('#winner').innerText=`You lost !!! Computer hits your Ball out of the ground :: computer choice ${(computerChoice)}`;
+        }
+        else if(computerChoice=='Stumps')
+        {
+          document.querySelector('#winner').innerText=`You won !!! you hits Computer stumps :: computer choice ${(computerChoice)}`;
+        }
+        else
+        {
+          document.querySelector('#winner').innerText=`Match Tie :: computer choice ${(computerChoice)}`;
+        }
+      }
+      else 
+      {
+        if(computerChoice=='Bat')
+        {
+          document.querySelector('#winner').innerText=`You Won !!! Computer hits the Stumps :: computer choice ${(computerChoice)}`;
+          
+        }
+        else if(computerChoice=='Ball')
+        {
+          document.querySelector('#winner').innerText=`You lost !!! Computer hits your stumps  :: computer choice ${(computerChoice)}`;
+        }
+        else
+        {
+          document.querySelector('#winner').innerText=`Match Tie :: computer choice ${(computerChoice)}`;
+        }
+      }
+    }
+  </script>
+</body>
+</html>
