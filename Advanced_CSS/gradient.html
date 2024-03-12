@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #section-1
+    {
+      width: 100%;
+      height: 100vh;
+       background-image: linear-gradient(to top left,rgb(5, 250, 5), rgb(126, 103, 179));/* Diagonaly from bottom right to top left */
+       background-image: repeating-linear-gradient(to top right,rgba(235, 62, 235, 0.6),rgba(48, 48, 221, 0.6) 100px);
+
+       background-image: linear-gradient(to top right,rgb(255, 255, 255,0.6),rgb(0, 0, 0,0.9)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3dMc_oW2OWHnxFmLo8-g9Gm-CZWC6U9iyg&usqp=CAU);
+       background-repeat: no-repeat;
+       background-size: cover;
+    }
+    #section-2
+    {
+      width: 100%;
+      height: 100vh;
+      background-image: radial-gradient(circle,red 20%,green 40%);
+      background-image: radial-gradient(
+        circle,
+        green 0%,
+        red 20%,
+        pink 40%,
+        yellow 60%,
+        white 100%
+      );
+    }
+  </style>
+</head>
+<body>
+  <section id="section-1"></section>
+  <section id="section-2"></section>
+</body>
+</html>
