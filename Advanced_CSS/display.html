@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display</title>
+</head>
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+  }
+  h1
+  {
+    margin: 10px;
+    border: 2px solid rgb(124, 124, 242);
+    border-radius: 4px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(239, 104, 239),rgb(126, 126, 248));
+  }
+  p{
+    width: 500px;
+    /* margin: 10px; */
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid pink;
+    background-image: linear-gradient(rgb(241, 97, 92),rgb(248, 236, 126));
+  }
+  span
+  {
+    display: inline-block; /* After using this my inline element starts applying margin to bottom simply vertically and width and height operation also starts to work on this */
+    width: 80px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+    background-image: linear-gradient(rgb(239, 104, 239),rgb(126, 126, 248));
+  }
+  button
+  {
+    padding: 10px;
+  }
+</style>
+<body>
+  <h1>THIS IS A BLOCK ELEMENT  heading (h1)</h1>
+  <P>I am also a block element : paragraph (p)</P>
+  <span>register now</span>
+  <span>login</span>
+  <button>Inline</button>
+  <button>Sign up</button>
+</body>
+</html>
