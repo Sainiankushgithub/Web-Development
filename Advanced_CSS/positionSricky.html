@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position sticky</title>
+</head>
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav
+  {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    background-image: linear-gradient(to right,blue,pink);
+  }
+  .child
+  {
+    width: 100%;
+    height: 100vh;
+    /* border:2px solid ; */
+    background-image: linear-gradient(to bottom,rgb(58, 181, 58),rgb(245, 245, 13)
+    );
+  }
+  .child-1 button
+  {
+    position: sticky;
+    top: 50%;
+  }
+</style>
+<body>
+  <div class="nav">
+    <h1>CSS - PROPERTY POSITION FIXED</h1>
+  </div>
+  <div class="child"></div>
+  <div class="child child-1">
+    <button>join whatsaap</button>
+  </div>
+  <div class="child"></div>
+</body>
+</html>
