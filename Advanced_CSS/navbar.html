@@ -14,12 +14,21 @@
       padding: 0;
       box-sizing: border-box;
     }
-    body
+    .body
     {
       height: 100vh;
-      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIfQgkvet2bzIAC0hlMopA61o1Ey-_LvZNZg&usqp=CAU);
+      background-image: url(https://s3-alpha-sig.figma.com/img/3b61/7d8e/81419826d27970520768c77452bb72a4?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qytnm6KdFnxQWe-gVHNyP5HI50LERGLYt90Kor9p7SD0ICvYlLe0tq-zbVVxfd9WjUV9M0ME2ZHMLgxix-~3A9dJ2Ytcg2xOfJgmHrY1wK1NUwbJLlo5YZ9d~DkWAXAIoFedwfhwRYDydvJOEOQM3oyh~f-ckfIFNwZOyH4NukJtouNNREJ6uTycdUPK917kjd5EoAnwzPrlYnrfN9LS3Q4g9zAHdHkCBdNbgmqWAwlwx2cHOEPW1vIWQo3ENX3d2O~bpsJoww8iAB60t8pMPhokdLGTrPWgaMgmukRxk3muOKsaeK0XaceLNNRGmiHXzR-OUrTXMH-PFQHrkqIhmg__);
       background-size: cover;
       background-repeat: no-repeat;
+    }
+    header
+    {
+    }
+    .body2
+    {
+      width: 100%;
+      height: 100vh;
+      background-color: black;
     }
     li{
       list-style: none;
@@ -38,19 +47,54 @@
     {
       position: relative;
       padding: 0 2rem;
-      border: 2px solid white;
+      /* border: 2px solid white; */
     }
-    .navbar
-    {
-      width: 100%;
-      height: 3rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      border: 2px solid white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    .navbar {
+  position: absolute;
+  padding: 10px;
+  top: 40px;
+  left: 16%;
+  width: 100%;
+  height: 50px;
+  max-width: 850px;
+  margin: 0 auto; /* Center horizontally */
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(70px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.body .iphone-1 {
+  width: 330px;
+  height: 500px;
+  position: absolute;
+  left: 70%;
+  transform: translateX(-50%);
+  top: calc(76px + 0.5rem); /* Adjusted */
+  z-index: 2;
+}
+ .body .iphone-1 img
+{
+  width: 330px;
+  height: 500px;
+}
+.body .iphone-2
+{
+  width: 330px;
+  height: 500px;
+  position: absolute;
+  right: 5%;
+  transform: translateX(-50%,);
+  top: calc(80px + 6rem); /* Adjusted */
+  z-index: 1;
+}
+.body .iphone-2 img
+{
+  width: 330px;
+  height: 500px;
+}
     .navbar .logo a
     {
       font-size: 1.5rem;
@@ -71,7 +115,7 @@
     .action-btn
     {
       color: #ffffff;
-      background-color: orange;
+      background-color: black;
       padding:0.5rem 1rem;
       font-size: 0.8rem;
       border: none;
@@ -81,32 +125,95 @@
       border-radius: 20px;
       transition: scale 0.3 ease;
     }
-    .action-btn:hover
-    {
-      scale: 1.05;
-      color: #ffffff;
-    }
-    .action-btn:active
-    {
-      scale: 1;
+    .action-btn:hover {
+  transform: scale(1.05);
+  color: #ffffff;
+}
+
+.action-btn:active {
+  transform: scale(1);
+}
+#gradient-text a {
+  background-image: linear-gradient(#C6F1F7, #F983E9, #B877FF, #C2E9CD);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Make the text transparent */
+}
+.hero-section
+{
+  padding: 10px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  width: 592px;
+  height: 92px;
+  top: 350px;
+  left: 95px;
+  letter-spacing: 1PX;
+}
+
+.hero-section span {
+  background: linear-gradient(90deg, #ff9933 0%, #ff9933 33.33%, #ffffff 33.33%, #ffffff 66.66%, #128807 66.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.min-containeer
+{
+  padding: 10px;
+  color: white;
+  position: absolute;
+  /* border: 2px solid white; */
+  width: 592px;
+  height: 50px;
+  top: 500px;
+  left: 95px;
+  letter-spacing: 1PX;
+}
+.min-containeer span
+{
+  text-decoration: underline;
+}
+.hero-section h3 {
+      background-image: linear-gradient(to right, #B877FF , #C2E9CD 50%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <div class="logo"><a href="#">AMPUP</a></div>
-      <ul class="links">
-        <li><a href="Home">Home</a></li>
-        <li><a href="About">About</a></li>
-        <li><a href="Contact us">Contact us</a></li>
-        <li><a href="serrvices">Services</a></li>
-      </ul>
-      <a href="#" class="action-btn">Get started</a>
-      <div class="toggle-btn">
-        <i class="fa-solid fa-bars"></i>
+  <div class="body">
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">AmpUP</a></div>
+        <ul class="links">
+          <li><a href="About">About</a></li>
+          <li><a href="pricing">Pricing</a></li>
+          <li><a href="Contact us">Contact us</a></li>
+          <li id="gradient-text"><a href="log in">log in</a></li>
+        </ul>
+        <a href="#" class="action-btn">Get started</a>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
+    </header>
+    <div class="iphone-1">
+      <img src="https://s3-alpha-sig.figma.com/img/c92e/e273/d4612939995b5e8cd95f2d2c561679bf?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d4SCJ~LFnrLT2MRGoB7ttKVXqUR8qqJ~IueI3eZ3fMW6Clz~PypeaKXHX6sWfGVGKWu8ACwCQV35KHi1EriqWIQgDxDDY5E0ygl9PsgKqcIaCw84HjAZV2csWF92oB35mjSDgb6~rxFjQ~sYjx6A4sLt80l2Ji~uKqkpveNgI1-ryvtLt6H2CKDxILmS-YWDhxqUPLpHkf90nNwVeqdzM2IfzeUT7SEd2Mhi5bVcAi5cNuCcATQ6mee9ofvmHfXc6OV4bvc8tZWoPdkk5pD8TXI~GaDBojzISnLEqVOiomKE4lUWlTG1JldptgV8BkgK-CA13P4tCFrHlZ70IGWa9g__" alt="error">
     </div>
-  </header>
+    <div class="iphone-2">
+      <img src="https://s3-alpha-sig.figma.com/img/b4a8/2255/b6e6fe4d64e400fe96e7afa73567949a?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i5GXd3hhZ~Q7ZOt-AeZHRENU31tqxmRUTHZIiD~YNlTPbP8gxLuHY2JYdr58JZ07356-AXgu-ON81z8d0wIYjwrzIHLhJ~mFxi-PeFT45V18MCrQSdF6~omEY2aabhEkxC5RPeUW7N2XO1zYu7yrdkEFTwARgB7PU8Xy9LiN5yeEZmyNi5c5siUHPd6GkULthvo9ECI119RUPBUYlBrjAqn0FXv~3H6FPLcR8BZdW8OdTw~66J0~VrkxLdbWy-oU9feW5B0SuXNd1fgnHDwzPvmlyq73EA~dnJmvKY46xJ6YMCZa30uHtITwn1KvVunsV4B-xqXcwQewDrhjfcf99g__" alt="error">
+    </div>
+    <div class="hero-section">
+      <p>Transforming the <span>Indian </span> EV Space <span id="wave"></span></p>
+      <br>
+      <h3>TRACK YOUR EV HEALTH</h3>
+    </div>
+    <div class="min-containeer">
+      Launching in Bhubaneswar on <span>30th of February, 2025 </span>
+    </div>
+  </div>
+  <div class="body2"></div>
+
 </body>
 </html>
