@@ -7,7 +7,7 @@
     .body
     {
       height: 100vh;
-      background-image: url(https://s3-alpha-sig.figma.com/img/3b61/7d8e/81419826d27970520768c77452bb72a4?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Qytnm6KdFnxQWe-gVHNyP5HI50LERGLYt90Kor9p7SD0ICvYlLe0tq-zbVVxfd9WjUV9M0ME2ZHMLgxix-~3A9dJ2Ytcg2xOfJgmHrY1wK1NUwbJLlo5YZ9d~DkWAXAIoFedwfhwRYDydvJOEOQM3oyh~f-ckfIFNwZOyH4NukJtouNNREJ6uTycdUPK917kjd5EoAnwzPrlYnrfN9LS3Q4g9zAHdHkCBdNbgmqWAwlwx2cHOEPW1vIWQo3ENX3d2O~bpsJoww8iAB60t8pMPhokdLGTrPWgaMgmukRxk3muOKsaeK0XaceLNNRGmiHXzR-OUrTXMH-PFQHrkqIhmg__);
+      background-image: url(/my_project1/images/background.png);
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -242,7 +242,7 @@
       padding: 10px;
       /* border: 2px solid white; */
       border-radius: 10px;
-      background-image:linear-gradient(rgba(176, 176, 176, 0.4),rgb(0, 0, 0,0.1)), url(https://s3-alpha-sig.figma.com/img/2514/0dc9/c5c1b40963de27f51fb1bf98cdbba708?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hq1S7iVmP8yj1fA5R7PFE~vZlw4VtV4OCLBEOLbita~8KsP6Vz7A8gDu~OB~Wioedy9kxrLQ~B0S5B~s~TiKVJ2Ctdn04wNMZmIRsKf-BrjGceoWyOGL5x9kw5ZWpe~DrkIAT3xVNLYcv8jlpB7yPAzlLtFElbwloZvn0o8so8uAAXYlzTPVmxE~VrYUjt4DYPC01ZkHWc8SbK24HrfJWkBPyY2NGw32mk1LUY-g3OjxgVA8eJHxcFiiSRkAWW2K0iF-5gaLqu-h86G7lkroKugpCi-UCEK7wt8Cr0Uj4M~6rSJfLSjseAZxHWHiVpjMzfdgR-9w2l2~rcioDZjgCA__);
+      background-image:linear-gradient(rgba(176, 176, 176, 0.4),rgb(0, 0, 0,0.1)), url(/my_project1/images/gradient.png);
       background-repeat: no-repeat;
       background-size: cover;
       width: 300px;
@@ -291,7 +291,7 @@
       padding: 10px;
       /* border: 2px solid white; */
       border-radius: 10px;
-      background-image:linear-gradient(rgba(176, 176, 176, 0.4),rgb(0, 0, 0,0.1)), url(https://s3-alpha-sig.figma.com/img/2514/0dc9/c5c1b40963de27f51fb1bf98cdbba708?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hq1S7iVmP8yj1fA5R7PFE~vZlw4VtV4OCLBEOLbita~8KsP6Vz7A8gDu~OB~Wioedy9kxrLQ~B0S5B~s~TiKVJ2Ctdn04wNMZmIRsKf-BrjGceoWyOGL5x9kw5ZWpe~DrkIAT3xVNLYcv8jlpB7yPAzlLtFElbwloZvn0o8so8uAAXYlzTPVmxE~VrYUjt4DYPC01ZkHWc8SbK24HrfJWkBPyY2NGw32mk1LUY-g3OjxgVA8eJHxcFiiSRkAWW2K0iF-5gaLqu-h86G7lkroKugpCi-UCEK7wt8Cr0Uj4M~6rSJfLSjseAZxHWHiVpjMzfdgR-9w2l2~rcioDZjgCA__);
+      background-image:linear-gradient(rgba(176, 176, 176, 0.4),rgb(0, 0, 0,0.1)), url(/my_project1/images/gradient.png);
       background-repeat: no-repeat;
       background-size: cover;
       width: 300px;
@@ -340,7 +340,7 @@
       padding: 10px;
       /* border: 2px solid white; */
       border-radius: 10px;
-      background-image:linear-gradient(rgba(176, 176, 176, 0.4),rgb(0, 0, 0,0.1)), url(https://s3-alpha-sig.figma.com/img/2514/0dc9/c5c1b40963de27f51fb1bf98cdbba708?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hq1S7iVmP8yj1fA5R7PFE~vZlw4VtV4OCLBEOLbita~8KsP6Vz7A8gDu~OB~Wioedy9kxrLQ~B0S5B~s~TiKVJ2Ctdn04wNMZmIRsKf-BrjGceoWyOGL5x9kw5ZWpe~DrkIAT3xVNLYcv8jlpB7yPAzlLtFElbwloZvn0o8so8uAAXYlzTPVmxE~VrYUjt4DYPC01ZkHWc8SbK24HrfJWkBPyY2NGw32mk1LUY-g3OjxgVA8eJHxcFiiSRkAWW2K0iF-5gaLqu-h86G7lkroKugpCi-UCEK7wt8Cr0Uj4M~6rSJfLSjseAZxHWHiVpjMzfdgR-9w2l2~rcioDZjgCA__);
+      background-image:linear-gradient(rgba(176, 176, 176, 0.4),rgb(0, 0, 0,0.1)), url(/my_project1/images/gradient.png);
       background-repeat: no-repeat;
       background-size: cover;
       width: 300px;
