@@ -126,6 +126,11 @@
   background-clip: text;
   color: transparent; /* Make the text transparent */
 }
+#gradient-text a:hover
+{
+
+  border:2px solid #C6F1F7,#F983E9, #B877FF, #C2E9CD;
+}
 .hero-section
 {
   padding: 10px;
