@@ -1,0 +1,103 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Unbounded', sans-serif;
+  background: url(pexels-kindel-media-9800029.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Log In Page */
+.login-page {
+  position: relative;
+  width: 600px;
+  height: 604px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(121.37deg, #C6F1F7 25.8%, #F983E9 52.32%, #B877FF 79.99%, #C2E9CD 103.35%);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* Log In Window */
+.login-window {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header */
+.header h1 {
+  font-size: 48px;
+  color: #C2E9CD;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(217, 217, 217, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+.input-field input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Log In Button */
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background: #000000;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-button:hover {
+  background: #333;
+}
+
+/* Help */
+.help {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.help a {
+  color: #C0C0C0;
+  text-decoration: none;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
