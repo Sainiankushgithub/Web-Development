@@ -1,4 +1,4 @@
-// TEMPLATE LITERALS
+
 
 // Methods with arguments 
 // toUpperCase()
@@ -74,3 +74,9 @@ else
 }
 r1.close();
 });
+
+
+// TEMPLATE LITERAL
+
+let accountBalance=56;
+console.log(`My account Balance is $${accountBalance}`);
