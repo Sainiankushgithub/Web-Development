@@ -1,5 +1,5 @@
 import React from 'react'
-
+import index from './index.css'
 const Footer = () => {
 
   const today=new Date();
