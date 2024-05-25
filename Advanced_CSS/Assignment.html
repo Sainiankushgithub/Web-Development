@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment</title>
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header h1
+    {
+      margin-top: 30px;
+      text-align: center;
+    }
+    header .line
+    {
+      margin: 10px 30px 10px 30px;
+      border-bottom: 2px solid rgb(165, 159, 159);
+    }
+    header .title
+    {
+      text-align: center;
+    }
+    body, html
+    {
+      height: 100%;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+    .parent
+    {
+      margin-top:  50px;
+      margin-left: 30px;
+      display: flex;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+    }
+    .child1
+    {
+      flex: 0 0 40%; /* 40% width */
+      height: 100%;
+      overflow-y: auto; /* Handle overflow */
+    }
+    .child1 p
+    {
+      color: black;
+      font-size: 40px;
+    }
+    .links
+    {
+      margin-top: 20px;
+    }
+    .links img,
+    .links a
+    {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .links a
+    {
+      margin-left: 8px;
+    }
+    
+    .skills
+    {
+      margin-top: 30px;
+    }
+    .skills div
+    {
+      margin-top: 30px;
+      font-weight: bold;
+    }
+
+    .Education
+    {
+      margin-top: 30px;
+    }
+    .school
+    {
+      margin-top: 30px;
+    }
+    .separator {
+      flex: 0 0 2px; /* 2px width */
+      background-color: gray; /* Background color */
+    }
+    .child2 {
+      flex: 0 0 60%; /* 60% width */
+      margin-left: 20px; /* Adjust margin */
+      border: 2px solid;
+      height: 100%;
+      overflow-y: auto; /* Handle overflow */
+    }
+    .About p
+    {
+      margin-bottom: 20px;
+      font-size: 40px;
+    }
+    .Work
+    {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ANKUSH SAINI</h1>
+    <p class="line"></p>
+    <p class="title">Web Developer</p>
+    <p class="line"></p>
+  </header>
+  <main>
+    <div class="parent">
+      <div class="child1">
+        <p>CONTACT</p>
+        <div class="links">
+          <img src="./Logo/Email/email.png" width="25px"  alt="Email"><a href="ankushsaini2870@gmail.com">ankushsaini2870@gmail.com</a>
+          <br>
+          <img src="./Logo/LinkedIn/LinkedIn.png" width="30px" alt="linkedIn"> <a href="https://www.linkedin.com/in/ankushsaini28/">linkedin-Ankushsaini28</a>
+          <br>
+          <img src="./Logo/github/githubL.png" width="30px" alt="github"> <a href="https://github.com/Sainiankushgithub">SainiAnkushgithub</a>
+        </div>
+        <div class="skills">
+          <P>SKILLS</P>
+          <div>HTML, CSS, GITHUB, VSCODE</div>
+        </div>
+        <div class="Education">
+          <p>EDUCATION</p>
+          <div class="school">
+            <strong>Higher secondary school
+              Shiksha Niketan School Jeevan
+              Nagar Jammu, India, jammu</strong>
+              <br>
+              <span id="space">2018-2020</span>
+              <br>
+              <br>
+              <span>Higher Senior Secondary School
+                <br>
+                Apr 2018 - Mar 2022
+                <br>
+                XII : 98.2%
+                <br>
+                X : 97.2%</span>
+                <br><br>
+                <strong>Bachelor of Technology <br>
+                  kalinga Institute of Industrial
+                  Technology, India, Bhubaneswar</strong>
+                  <span> <br>2022-2026 <br>
+                    Bachelor's degree, Information
+                    Technology <br>
+                    Sep 2022 - Sep 2026</span>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="separator"></div>
+
+
+      <div class="child2">
+        <div class="About">
+          <p>ABOUT</p>
+          <span>As a dedicated Information Technology student at KIIT University, I am
+            deeply passionate about software engineering and continuously strive to
+            enhance my skills in this field. Currently serving as a Research Scholar
+            at KIIT Student Research Center, I am dedicated to exploring innovative
+            approaches to software development and problem-solving. <br> <br>
+            My journey in software engineering has equipped me with proficiency
+            in various programming languages and technologies, including C, C++,
+            JavaScript, React.js, and MySQL. I have also honed my skills in implementing
+           Data Structures and Algorithms, enabling me to tackle complex
+            problem-solving tasks with efficiency and precision.</span>
+
+            <div class="Work">
+              <p>WORK EXPERIENCE</p>
+              <span><strong>Leading Web development</strong> <br> <br>
+                Evtron : Kiit Research Center <br>
+                <strong>EvTron</strong> <br>
+                lead / India, Bhubaneswar <br>
+                2023 - Now  <br>
+                <strong>Research Scholar</strong> <br>  
+                KIIT - Kalinga Institute of Industrial Technology <br>
+                Feb 2024 - Present (2 months) <br>
+                At KIIT Student Research Center I am working as Research Scholar devoted
+                to find sustainable source of Energy <br> <br>
+                EvTron is a Research Scholar based in Bhubaneswar, India, currently working at KIIT
+                (Kalinga Institute of Industrial Technology). The position began in February 2024
+                and is ongoing. EvTron's primary focus is on researching sustainable sources of
+                energy.  <br> <br>
+                <span>Working at KIIT's Student Research Center, EvTron's role involves conducting indepth research into sustainable energy sources. This likely includes exploring
+                  various renewable energy technologies such as solar, wind, hydroelectric, biomass,
+                  and possibly emerging technologies like hydrogen fuel cells or advanced battery
+                  systems.</span>
+                </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
