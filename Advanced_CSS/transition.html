@@ -4,8 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body
+    {
+      background-color: black;
+    }
+    .containeer
+    {
+      width: 100%;
+      height: 100vh;
+      border: 2px solid white;
+      padding: 20px;
+      position: relative;
+    }
+    .containeer1
+    {
+      display: inline-block;
+      width: 40%;
+      height: 100vh;
+      border: 2px solid white;
+      flex: 0 0 40%;
+      position: absolute;
+    }
+    .containeer2
+    {
+      width: 60%;
+      height: 100vh;
+      border: 2px solid white;
+      flex: 0 0 60%;
+      position: absolute;
+    }
+    
+  </style>
 </head>
 <body>
-  
+  <div class="containeer">
+    <div class="containeer1">
+      <h1>CSS TRANSITION </h1>
+    </div>
+    <div class="containeer2"></div>
+  </div>
 </body>
 </html>
