@@ -54,8 +54,8 @@ for(let i=0;i<arr.length;i++)
       //  7.Includes()   ---> Gives True or false value that the given value present in the array or not 
       //  8.reverse()
       //  9.sort()
-      //  10.slice()
-      //  11.splice()
+      //  10.slice()   ---> gives the element from the start and the end 
+      //  11.splice()    ----> removes or add the array element form given index e.g index, no of element you wanted to delete , elements how many you want to add from given index
 
 
       console.log('\n\n');
@@ -103,6 +103,17 @@ for(let i=0;i<arr.length;i++)
               {
                 console.log(concate_array[i]);
               }
+
+
+              // slice
+              console.log('slice method');
+              const slice_arr=concate_array.slice(3);
+
+              // const slice_arr=concate_array.slice(3,6);
+              for(let i=0;i<slice_arr.length;i++)
+                {
+                  console.log(slice_arr[i]);
+                }
 
 
 
