@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform</title>
+
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .containeer
+    {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .box
+    {
+      background-color: blue;
+      width: 100px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      transition: all 2s ease-in-out;
+      box-shadow: 0 0 4px 5px  rgb(183, 186, 233);
+    }
+    .box:nth-child(even)
+    {
+      background-color: red;
+    }
+    .box:nth-child(odd):hover
+    {
+      translate: 90vw 0;
+    }
+    .box:nth-child(even):hover
+    {
+      translate: 0 50vw;
+    }
+  </style>
+</head>
+<body>
+  <div class="containeer">
+    <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  </div>
+</body>
+</html>
