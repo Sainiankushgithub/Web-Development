@@ -51,7 +51,7 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 .body .iphone-1 {
-  width: 330px;
+  width: 300px;
   height: 500px;
   position: absolute;
   left: 70%;
@@ -61,22 +61,22 @@
 }
  .body .iphone-1 img
 {
-  width: 330px;
+  width: 300px;
   height: 500px;
 }
 .body .iphone-2
 {
-  width: 330px;
+  width: 300px;
   height: 500px;
   position: absolute;
-  right: 5%;
+  right: 6%;
   transform: translateX(-50%,);
-  top: calc(80px + 6rem); /* Adjusted */
+  top: calc(40px + 5rem); /* Adjusted */
   z-index: 1;
 }
 .body .iphone-2 img
 {
-  width: 330px;
+  width: 300px;
   height: 500px;
 }
     .navbar .logo a
@@ -247,6 +247,60 @@
         opacity: 0;
       }
     }
+    .scrolling {
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      bottom: 0;
+      border-radius: 6px;
+      display: flex;
+      background-color: white;
+      align-items: center;
+      overflow: hidden;
+    }
+    
+    .logo-container {
+      display: inline-block;
+      animation: moveLogos 10s linear infinite;
+    }
+    
+    .logo-container img {
+      width: 100px;
+    }
+    
+    @keyframes moveLogos {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(100% + 100px)); /* Move across the screen */
+      }
+    }
+    
+    #renault-logo
+    {
+      position: relative;
+      top: 10px;
+      /* border-radius: 10px; */
+      padding: 0;
+    }
+    #volks-logo
+    {
+      padding: 5px;
+    }
+    .scrolling #toy-logo
+    {
+      padding: 5px;
+      border-radius: 10px;
+      top: 1px;
+    }
+
+
+
+
+
+    
+
     .body2
     {
       position: relative;
