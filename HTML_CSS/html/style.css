@@ -129,4 +129,33 @@ header{
     align-items: center;
   }
 
+  .active .navbar{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn
+  .mobile-nav-icon[name="close-outline"]{
+    display: block;
+  }
+
+  .active .mobile-navbar-btn
+  .mobile-nav-icon[name="menu-outline"]{
+    display: none;
+  }
+
+}
+
+@media(max-width:35em)
+{
+  .header{
+    padding: 0 2.4rem;
+  }
+
+  .header .logo{
+    width: 50%;
+    height: 50%;
+  }
 }
