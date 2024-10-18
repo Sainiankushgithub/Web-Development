@@ -6,10 +6,14 @@
     }
     .body
     {
-      height: 100vh;
-      background-image: url(/Evtron/images/background.png);
-      background-size: cover;
-      background-repeat: no-repeat;
+      position: relative;
+      overflow-x: hidden;
+  height: 100vh;
+  background-color: rgb(0, 2, 18);
+  background: radial-gradient(20% 20% at left top, rgba(25, 73, 243, 0.48) 0%, rgba(3, 0, 151, 0) 100%) top left,
+  radial-gradient(20% 20% at right 37%, rgba(249, 131, 233, 0.48) 0%, rgba(184, 119, 255, 0) 100%) right 37%,
+  radial-gradient(20% 20% at left 70%, rgba(249, 131, 233, 0.48) 0%, rgba(184, 119, 255, 0) 100%),
+  #000212;
     }
     li{
       list-style: none;
@@ -69,9 +73,9 @@
   width: 300px;
   height: 500px;
   position: absolute;
-  right: 6%;
+  right: 10%;
   transform: translateX(-50%,);
-  top: calc(40px + 5rem); /* Adjusted */
+  top: calc(30px + 5rem); /* Adjusted */
   z-index: 1;
 }
 .body .iphone-2 img
@@ -131,16 +135,21 @@
 
   border:2px solid #C6F1F7,#F983E9, #B877FF, #C2E9CD;
 }
+.fix-position{
+  position: absolute;
+  top: 150px;
+}
+
 .hero-section
 {
   padding: 10px;
   color: white;
   position: absolute;
-  /* border: 2px solid white; */
+  border: 2px solid white;
   width: 592px;
   height: 92px;
-  top: 350px;
-  left: 95px;
+  top: 60%;
+  left: 195px;
   letter-spacing: 1PX;
 }
 

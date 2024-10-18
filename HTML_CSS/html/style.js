@@ -4,6 +4,6 @@ const toggleNavBar=()=>{
   // alert('Boom succesfully');
 
   nav_header.classList.toggle("active");
-};
+};  
 
 mobile_nav.addEventListener("click",()=>toggleNavBar());
