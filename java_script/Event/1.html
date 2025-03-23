@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+<body>
+  <h1>Inline Event</h1>
+  <button onclick="alert('Welcome! Good Evening.')">greeting </button>
+  <button  type="submit" ondblclick="alert('welcome ! Good morning.')">greeting again</button>
+
+  <!-- DOM Event Handler  -->
+
+  <h1>Dom Event Handler</h1>
+  <button id="myBtn1">greeting</button>
+  <button id="myBtn2">greeting again</button>
+
+  <!-- Add Event listerner Handler -->
+   <h1>Add Event Listerner Handler</h1>
+   <button id="myBtn3"> greeting</button>
+   <button id="myBtn4">greeting again</button>
+  <script>
+
+    // DOM
+    document.getElementById('myBtn1').onclick=function (){
+      alert('Hello ! Good Morning.');
+    };
+
+    document.getElementById('myBtn2').onmouseover= function(){
+      alert('Hello ! Good Evening.');
+    };
+
+    // Event Listerner
+
+    document.getElementById('myBtn3').addEventListener('click',()=>{
+      alert('Hii ! Namaste.');
+    });
+  </script>
+</body>
+</html>
