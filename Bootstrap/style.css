@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+}
+.carousel-item img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+  transition: border-bottom 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active:hover::after,
+.navbar-nav .nav-link.active:focus::after {
+  width: 100%;
+  left: 0;
+}
+
