@@ -106,17 +106,36 @@
     const handleButton2=()=>{
        rgb2=hexaColorCode();
       console.log(rgb2);
-      document.body.style.backgroundImage=`linear-gradient(to right,rgb(45, 66, 152),${rgb2})`;
+      document.body.style.backgroundImage=`linear-gradient(to right,${rgb1},${rgb2})`;
       document.querySelector(".btn2").textContent=`${rgb2}`;
-      document.querySelector(".p-text").innerHTML=`background-image: linear-gradient(to right,${rgb1},${rgb2});`;
+      document.querySelector(".p-text").innerText=`background-image: linear-gradient(to right,${rgb1},${rgb2});`;
     }
 
     btn1.addEventListener('click',handleButton1);
     btn2.addEventListener('click',handleButton2);
     const pText=document.querySelector(".p-text");
-    pText.addEventListener('click',()=>{
-      navigator.clipboard.writeText(pText.innerHTML);
+    // pText.addEventListener('click',()=>{
+    //   navigator.clipboard.writeText(pText.innerText);
+    // });
+    pText.addEventListener('click', () => {
+  navigator.clipboard.writeText(pText.innerText).then(() => {
+    Swal.fire({
+      icon: 'success',
+      title: 'Copied!',
+      text: 'CSS gradient code copied to clipboard.',
+      timer: 1500,
+      showConfirmButton: false
     });
+  }).catch(err => {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Failed to copy text.'
+    });
+    console.error(err);
+  });
+});
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
