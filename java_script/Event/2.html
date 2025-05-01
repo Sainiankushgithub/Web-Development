@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>addEventListener</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: black;
+      color: white;
+    }
+    .container{
+      font-size: 2rem;
+      margin-top: 5rem;
+      margin-left: 2rem;
+      /* border: 2px solid white; */
+      display: inline-block;
+    }
+    .container-2 input{
+      font-size: 2rem;
+      background-color: white;
+      color: black;
+      border: none;
+      box-shadow: none;
+    }
+    .container-2{
+      border: 2px solid white;
+      background-color: grey;
+    }
+    .output{
+      background-color: grey;
+    }
+    .output p{
+      background-color: grey;
+      margin-top: 10px;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <!-- for keyboard section  -->
+  <div class="container">
+    <div class="container-2">
+      <input type="text" id="myInput" placeholder="Type Something......">
+      <div class="output">
+        <p class="keyPressed">Key Pressed : </p>
+        <p class="keyCode">Key code : </p>
+        <p class="CharCodeAt">Char CodeAt : </p>
+        <p class="EventType">Event type : </p>
+      </div>
+    </div>
+  </div>
+  <!-- For input section  -->
+  <div class="container">
+    <div class="container-2">
+      <input type="text" id="Input" name="userName" placeholder="Type Something......">
+      <div class="output">
+        <p class="inputValue">Input Value : </p>
+        <p class="inputName">Input Name : </p>
+        <p class="inputType">Input Type : </p>
+        <p class="eventType">Event type : </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    // KEYBOARD SECTIOIN CODE 
+    // Function -1 
+    const handleKeyPress=(event)=>{
+      console.log(event);
+      // Display information about the keyboard event  in the console
+      console.log(event.key);
+      console.log(event.code);
+      console.log(event.type);
+
+      document.querySelector(".keyPressed").textContent=`Key pressed : ${event.key}`;
+
+      document.querySelector(".keyCode").textContent=`Key code : ${event.code}`;
+
+      document.querySelector(".CharCodeAt").textContent=`Char CodeAt : ${event.key.charCodeAt(0)}`;
+
+      document.querySelector(".EventType").textContent=`Event Type : ${event.type}`;
+    };
+
+    //  FUNCTION -2 
+
+    const handleKeyPress2=(event)=>{
+      console.log(event);
+      document.querySelector(".keyPressed").textContent=`Key Pressed : ${event.key}`;
+
+      document.querySelector(".keyCode").textContent=`Key code : ${event.code}`;
+
+      document.querySelector(".CharCodeAt").textContent=`Char CodeAt : ${event.key.charCodeAt(0)}`;
+
+      document.querySelector(".EventType").textContent=`Event Type : ${event.type}`;
+    };
+
+    // INPUT SECTION CODE 
+    const handleInput=(event)=>{
+      console.log(event);
+      console.log(event.target.value)
+      console.log(event.target.name);
+      console.log(event.inputType);
+      console.log(event.type);
+
+      document.querySelector(".inputValue").textContent=`Input Value : ${event.target.value}`;
+
+      document.querySelector(".inputName").textContent=`Input Name : ${event.target.name}`;
+
+      document.querySelector(".inputType").textContent=`Input Type : ${event.inputType}`;
+
+      document.querySelector(".eventType").textContent=`Event Type : ${event.type}`;
+    }
+
+    // var myInput=document.getElementById('myInput');
+    // myInput.addEventListener("keydown",handleKeyPress);
+
+    var myInput2=document.getElementById('myInput');
+    myInput2.addEventListener("keyup",handleKeyPress2);
+
+    var Input=document.getElementById('Input');
+    Input.addEventListener("input",handleInput);
+  </script>
+</body>
+</html>

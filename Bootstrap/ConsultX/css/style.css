@@ -155,5 +155,24 @@ option{
     width: 730px;
   }
 }
+/* Signup page CSS  */
+.signup-section {
+  min-height: 100vh;
+  background: #000000;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(13, 13, 43, 1) 35%, rgba(168, 168, 160, 1) 100%);
+  display: flex;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+.sign-border{
+  border-radius: 20px;
+}
+span .sign-border:hover{
+  background-color: white;
+  color: black;
+}
 
 
