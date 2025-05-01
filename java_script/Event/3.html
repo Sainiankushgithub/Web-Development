@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient project</title>
+  <!-- CSS  -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background-image: linear-gradient(to right,rgb(92,165,63),rgb(45, 66, 152));
+    }
+    .container{
+      /* border: 2px solid black; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 200px;
+      padding: 20px;
+    }
+    .container button{
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn1{
+      border: none;
+      background-color: #63075b;
+      color: white;
+    }
+    .btn2{
+      border: none;
+      background-color:#39ed63 ;
+    }
+    .container-2{
+      /* border: 2px solid black; */
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    .container-2 h4{
+      color: white;
+    }
+    .container-3{
+      /* border: 2px solid black; */
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+    }
+    .container-3 p{
+      padding: 10px;
+      border-radius: 5px;
+      border-left: 3px solid ;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <button class="btn1" id="myButton1">#051937</button>
+      <button class="btn2" id="myButton2">#008793</button>
+    </div>
+    <div class="container-2">
+      <h4>copy your code here</h4>
+    </div>
+
+    <div class="container-3">
+      <p class="p-text">background-image: linear-gradient(to right,rgb(92,165,63),rgb(45, 66, 152));</p>
+    </div>
+  </section>
+
+  <script>
+    let btn1=document.getElementById("myButton1");
+    let btn2=document.getElementById("myButton2");
+    let rgb1="#000";
+    let rgb2="#fff";
+
+    const hexaColorCode=()=>{
+      let color="#";
+      let myHexaValue="0123456789abcdef";
+      for(let i=0;i<6;i++){
+        color+=myHexaValue[Math.floor(Math.random()*16)];
+      }
+      // console.log(color);
+      return color;
+    }
+    const handleButton1=()=>{
+       rgb1=hexaColorCode();
+      console.log(rgb1);
+      document.body.style.backgroundImage=`linear-gradient(to right,${rgb1},${rgb2})`;
+      document.querySelector(".btn1").textContent=`${rgb1}`;
+      document.querySelector(".p-text").innerHTML=`background-image: linear-gradient(to right,${rgb1},${rgb2});`;
+    }
+    const handleButton2=()=>{
+       rgb2=hexaColorCode();
+      console.log(rgb2);
+      document.body.style.backgroundImage=`linear-gradient(to right,rgb(45, 66, 152),${rgb2})`;
+      document.querySelector(".btn2").textContent=`${rgb2}`;
+      document.querySelector(".p-text").innerHTML=`background-image: linear-gradient(to right,${rgb1},${rgb2});`;
+    }
+
+    btn1.addEventListener('click',handleButton1);
+    btn2.addEventListener('click',handleButton2);
+    const pText=document.querySelector(".p-text");
+    pText.addEventListener('click',()=>{
+      navigator.clipboard.writeText(pText.innerHTML);
+    });
+  </script>
+</body>
+</html>
