@@ -10,21 +10,46 @@
       padding: 0;
       box-sizing: border-box;
     }
+    body{
+      background-color: black;
+    }
     .container{
       height: 100vh;
       display: flex;
       align-items:center;
       justify-content: center;
     }
+    .input-tg{
+      font-size: 1.5rem;
+      display: inline-block;
+      border: 2px solid black;
+      box-shadow: none;
+    }
+    .input-tg:focus{
+      outline: none;
+    }
+    .btn{
+      border: 2px solid yellow;
+      padding: 10px;
+      font-weight: 800;
+      margin-left: 20px;
+      background:none;
+      background-color: yellow;
+      color: black;
+      border-radius: 20px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
   <!-- Project on TO-DO LIST  -->
    <div class="container">
-    <form >
-      <input class="" type="text">
-      <button class="btn">Add to List</button>
-    </form>
+    <div class="container-2">
+      <form >
+        <input class="input-tg" type="text">
+        <button class="btn">Add to List</button>
+      </form>
+    </div>
    </div>
 </body>
 </html>
