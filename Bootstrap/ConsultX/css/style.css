@@ -1,47 +1,51 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color:black;
+body {
+  background-color: black;
   font-family: "Merriweather", serif;
   font-weight: 400; /* Change weight as needed (300, 400, 700, etc.) */
   font-style: normal;
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 700;
   letter-spacing: 1px;
   color: #ffffff;
 }
-p{
+p {
   color: white;
 }
-.navbar-black{
+.navbar-black {
   background-color: #000;
 }
-.navbar-brand img{
+.navbar-brand img {
   width: 180px;
   height: auto;
   object-fit: cover;
   max-height: 60px;
 }
-.carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 80vh;
   object-fit: cover;
 }
-.carousel-item img{
+.carousel-item img {
   width: 100%;
   height: 75vh;
   object-fit: cover;
 }
 /* card images */
-.card img{
+.card img {
   width: 100%;
   height: 250px;
 }
-.section-2-logo i{
+.section-2-logo i {
   font-size: 20px;
 }
 
@@ -55,18 +59,18 @@ p{
 .col-6.hr:hover hr {
   border-bottom: 3px solid #000; /* Dark bold underline on hover */
 }
-.arrow-icon{
+.arrow-icon {
   opacity: 0;
   transition: all 0.3s ease;
 }
-.hr:hover .arrow-icon{
+.hr:hover .arrow-icon {
   opacity: 1;
   transform: translate(5px);
 }
-.sec-color{
+.sec-color {
   background-color: #1e2222;
 }
-.a-tag a{
+.a-tag a {
   margin-top: 20px;
   color: white;
   border: 2px solid white;
@@ -75,14 +79,14 @@ p{
   padding: 20px;
   margin-bottom: 50px;
 }
-.a-tag a:hover{
+.a-tag a:hover {
   background-color: white;
   color: black;
 }
-.hr-bold{
+.hr-bold {
   border-bottom: 3px solid white;
 }
-.footer{
+.footer {
   height: 100px;
 }
 .cont-service a {
@@ -100,30 +104,30 @@ p{
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 /* About section code  */
-.about-section{
+.about-section {
   background-color: #ffffff;
 }
-.vertical-aln{
+.vertical-aln {
   width: 3px;
   height: 40px;
   background-color: grey;
 }
-.link-a a{
-  background-color:whitesmoke;
+.link-a a {
+  background-color: whitesmoke;
   border: 2px solid grey;
   border-radius: 50px;
   margin-bottom: 10px;
   font-weight: 1000;
   padding-left: 35px;
 }
-.link-a a:hover{
+.link-a a:hover {
   background-color: #0d6efd;
   border: 1px solid grey;
   color: white;
 }
 /* Request for services  */
 .image-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -137,29 +141,80 @@ p{
   position: relative;
   z-index: 0; /* make sure the image is behind the overlay */
 }
-.form-cont input,select{
+.form-cont input,
+select {
   background-color: black;
   color: white;
   border: none;
   border-bottom: 2px solid white;
 }
-option{
+option {
   color: white;
   background-color: black;
 }
-.custom-select-width{
+.custom-select-width {
   width: 300px;
 }
-@media (min-width:768px){
-  .custom-select-width{
+@media (min-width: 768px) {
+  .custom-select-width {
     width: 730px;
   }
 }
+
+/* what we do page  */
+.bg-what-we-do {
+  background-image: linear-gradient(to right, blue, #4e4efe);
+}
+.bg-what-span {
+  padding: 7px;
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.main-container-background{
+  background-color: #1d1e23;
+}
+.tags .nav-link {
+  margin-top: 10px;
+  color: #fff;
+  padding: 0;
+  margin-right: 1.5rem;
+  border-bottom: 2px solid transparent; /* ← Prevent layout shift by reserving space */
+  transition: border-color 0.2s, color 0.2s; /*← Smooth transition   */
+}
+
+.tags .nav-link:hover {
+  color: #4e4efe;
+  border-bottom: 2px solid #4e4efe; /* ← Border now appears smoothly without pushing content */
+}
+
+.col-syllabus span i{
+  background-color: rgba(255,255,255,0.2);
+  /* border: 2px solid white; */
+  border-radius: 50px;
+  padding: 15px;
+}
+.fw-lighter{
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+
+
+
 /* Signup page CSS  */
 .signup-section {
   min-height: 100vh;
   background: #000000;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(13, 13, 43, 1) 35%, rgba(168, 168, 160, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(13, 13, 43, 1) 35%,
+    rgba(168, 168, 160, 1) 100%
+  );
   display: flex;
 }
 
@@ -167,12 +222,10 @@ input.form-control:focus {
   box-shadow: none;
   border: none;
 }
-.sign-border{
+.sign-border {
   border-radius: 20px;
 }
-span .sign-border:hover{
+span .sign-border:hover {
   background-color: white;
   color: black;
 }
-
-
