@@ -286,13 +286,40 @@ Sign page css code
   width: 100%;
 }
 .signup-btn{
-  background-color: white;
-  color: black;
+  padding: 10px 15px;
+  color: white;
+  border: 1px solid white;
   border-radius: 50px;
 }
 .signup-btn:hover{
-  background-color: black;
-  color:white;
+  background-color: white;
+  color: black;
+}
+
+
+
+/* 
+
+
+
+
+*/
+.file-margin{
+  margin-right: 135px;
+}
+
+/* Ensure consistent layout */
+.file-label-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#filelabel {
+  display: inline-block;
+  min-width: 200px;         /* Fixed width to prevent shifting */
+  white-space: nowrap;      /* Prevent wrapping */
+  overflow: hidden;         /* Hide overflowed text */
+  text-overflow: ellipsis;  /* Show ... when text overflows */
 }
 
 
