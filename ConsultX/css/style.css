@@ -319,3 +319,61 @@ User consultor
 }
 
 
+/* 
+*
+*
+    About Pge
+*
+*/
+.header-container{
+  width: 100%;
+}
+@media (min-width:992px) {
+  .header-container{
+    width: 60%;
+    margin: 0 auto;
+}
+}
+.img-control-about{
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .py-sm-3{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
+.clipped-section{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 96.25%, 50% 99%, 0% 96.25%);
+  /* background-color: #1d1716; */
+  background-color: #252525;
+}
+.dot-size{
+  font-size: 5px;
+}
+
+.img-control-about-consultx{
+  border-radius: 10px;
+}
+
+@media(min-width: 641px){
+  .img-control-about-consultx{
+    width: 600px;
+    height: 400px;
+  }
+}
+@media(min-width: 768px){
+.sticky-sidebar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  align-self: start;
+  z-index: 1;
+}
+}
+
+
