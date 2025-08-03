@@ -258,6 +258,15 @@ Sign page css code
   width: 350px;
   margin:0 auto;
 }
+
+.custom-input, 
+.custom-input select {
+  background-color: transparent;
+  border: none;
+  color: white;
+  appearance: none; /* optional: for clean dropdown */
+}
+
 .custom-bt-tag{
   border-bottom: 1px solid white;
   margin-top: 15px;
@@ -375,5 +384,3 @@ User consultor
   z-index: 1;
 }
 }
-
-
