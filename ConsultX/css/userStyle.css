@@ -180,5 +180,27 @@
   }
 }
 
+/* 
+Consult now page 
+*/
 
+@media (max-width: 768px) {
+  .container-fluid-small{
+    width: 100vw;
+  }
+}
 
+@media (min-width: 768px) {
+  .large-width{
+    width: 75vw;
+  }
+}
+.cursor-point{
+  cursor: not-allowed;
+}
+.vr {
+  width: 2px;
+  background-color: black;
+  height: 80%;
+  margin: auto 0;
+}
