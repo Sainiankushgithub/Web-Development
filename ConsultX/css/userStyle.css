@@ -204,3 +204,18 @@ Consult now page
   height: 80%;
   margin: auto 0;
 }
+/* 
+Consultee payment 
+
+*/
+.no-focus:focus{
+  box-shadow: none;
+  outline: none;
+}
+.btn-hover {
+  color: grey;
+}
+.btn-hover:hover {
+  background-color: #0dcaf0;
+  color: white;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/userStyle.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+  <!-- AOS Link  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- SWEET ALERT CDN LINK  -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      background-color: #f0f0f5;
+    }
+
+    input[type="text"]:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px rgb(77, 151, 225);
+    }
+  </style>
+</head>
+
+<body>
+  <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <img class="img-fluid" src="/images/consultX_logo3.png" alt="logo" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="d-flex justify-content-center  mt-5 pt-5">
+    <div class="row container-fluid-small bg-white shadow large-width mx-2 mt-3 rounded">
+      <!-- Left Section -->
+      <div class="col-sm-12 col-md-6 col-lg-6 p-4 ">
+
+        <div>
+          <a href="/html/consultNow.html"><i class="fa-solid fa-arrow-left text-muted fs-5"></i></a>
+          <span class="ms-2 fs-4">Confirm & Pay</span>
+        </div>
+        <p class="h-color fw-light mt-2">Verified Consultor online now <span class="ms-2"
+            style="color: #32cd32; font-size: 10px;"><i class="fa-solid fa-circle fa-beat"></i></span> </p>
+        <div class="d-flex align-items-center">
+          <!-- Overlapping Images -->
+          <div class="d-flex overlap-images">
+            <img src="/images/card-2.jpg" alt="Doctor 1">
+            <img src="/images/card-5.jpg" alt="Doctor 2">
+            <img src="/images/card-3.jpg" alt="Doctor 3">
+          </div>
+          <!-- Text aligned properly -->
+          <span class="ms-1 text-muted">+10</span>
+        </div>
+        <p class="h-color mt-2 fw-light">One of them will speak to you shortly.</p>
+        <p class="h-color fw-light"><i class="fa-solid fa-lightbulb me-2" style="color: lime;"></i>Most of users found
+          online consultation helpful</p>
+        <p class="h-color fw-light"><i class="fa-solid fa-building-columns me-2" style="color: lime;"></i> Your
+          well-being starts with a trusted consultation.</p>
+        <p class="h-color">Consultee name</p>
+        <input type="text" class="form-control mb-2 w-75" placeholder="Enter your name" required>
+        <button id="showCouponInput" class="btn text-info no-focus">Have a coupon code ?</button>
+        <div class="input-group my-2 w-75 d-none" id="couponInputContainer">
+          <input id="couponCode" type="text" class="form-control" placeholder="Write Coupon Code" aria-label="Coupon Code" />
+          <button id="applyCoupon" class="btn btn-hover no-focus border" type="button">Apply</button>
+        </div>
+        <div id="couponMessage" class="d-none mb-2"></div>
+        <p class="h-color">Final Fee</p>
+        <h5 class="h-color">₹ 199</h5>
+        <button class="btn btn-info text-center text-white mt-1 no-focus">Continue to Payment</button>
+      </div>
+
+      <div class="col-md-1 d-none d-md-flex">
+        <div class="vr"></div>
+      </div>
+
+      <!-- Right Section  -->
+      <div class="col-md-5 d-none d-md-block position-relative">
+        <div class="text-center mt-5">
+          <img class="img-fluid mt-3" src="/images/coupon.png" alt="Doctor Consultation">
+          <h5 class="h-color my-3">3x more affordable!</h5>
+          <p class="h-color fw-light">Get the best consultation at a fraction of the cost.</p>
+          <p class="h-color fw-light"><i class="fa-solid fa-clock me-2" style="color: lime;"></i>Quick and easy booking process.</p>
+          <p class="h-color fw-light"><i class="fa-solid fa-thumbs-up me-2" style="color: lime;"></i>Highly recommended.</p>
+        </div>
+        <div class="position-absolute top-0 end-0 p-3">
+          <a href="/html/userConsultee.html"><i class="fa-solid fa-xmark text-muted fs-4"></i></a>
+        </div>
+      </div>
+      <!-- End of main row  -->
+    </div>
+    <!-- End of main container -->
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <!-- AOS Link  -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Another AOS Link  -->
+  <script>
+    AOS.init();
+    document.getElementById('showCouponInput').addEventListener('click', function () {
+      this.classList.add('d-none');
+      document.getElementById('couponInputContainer').classList.remove('d-none');
+    });
+    document.getElementById('applyCoupon').addEventListener('click',function (){
+    const couponCode = document.getElementById('couponCode').value.trim();
+    const couponMessage = document.getElementById('couponMessage');
+    if(couponCode == "EXTRA10"){
+      couponMessage.classList.remove('d-none');
+      couponMessage.innerHTML = `<span class="text-success">✔ Coupon applied successfully.</span>`;
+    }else{
+      couponMessage.classList.remove('d-none');
+      couponMessage.innerHTML = `<span class="text-danger">❌ Invalid Coupon Code.</span>`;
+    }
+    });
+  </script>
+</body>
+
+</html>
