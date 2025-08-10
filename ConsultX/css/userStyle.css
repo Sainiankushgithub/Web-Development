@@ -219,3 +219,19 @@ Consultee payment
   background-color: #0dcaf0;
   color: white;
 }
+/* 
+Payment page 
+*/
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.small-qr{
+  width: 300px; /* Adjust size as needed */
+  height: 300px; /* Adjust size as needed */
+  object-fit: cover; /* Ensures the image fills the square properly */
+}
+
+
